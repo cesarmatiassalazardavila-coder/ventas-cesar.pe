@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CESAR VENTAS PRO</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+
+header{
+    background:linear-gradient(90deg,#00f7ff,#0066ff);
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.container{
+    padding:20px;
+}
+
+.product{
+    background:#111;
+    margin:20px 0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px #00f7ff;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:scale(1.05);
+}
+
+button{
+    background:#00f7ff;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#00c3cc;
+}
+
+.payments{
+    margin-top:30px;
+    padding:20px;
+    background:#111;
+    border-radius:15px;
+    box-shadow:0 0 15px #0066ff;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+🔥 CESAR VENTAS PRO 🔥
+</header>
+
+<div class="container">
+
+<div class="product">
+<h2>HG Cheats</h2>
+<p>1 día: S/6</p>
+<p>7 días: S/25</p>
+<p>30 días: S/36</p>
+<button onclick="comprar('HG Cheats')">Comprar</button>
+</div>
+
+<div class="product">
+<h2>Cuban Mods</h2>
+<p>1 día: S/5</p>
+<button onclick="comprar('Cuban Mods')">Comprar</button>
+</div>
+
+<div class="product">
+<h2>Seguidores Redes</h2>
+<p>TikTok - Instagram - YouTube</p>
+<button onclick="comprar('Seguidores')">Comprar</button>
+</div>
+
+<div class="product">
+<h2>Florite iPhone</h2>
+<p>Servicio Premium</p>
+<button onclick="comprar('Florite iPhone')">Comprar</button>
+</div>
+
+<div class="payments">
+<h2>💰 Métodos de Pago</h2>
+<p>Yape: 900398874</p>
+<p>Prexpe: Disponible</p>
+<p>BCP: Disponible</p>
+<p>Enviar comprobante por WhatsApp</p>
+</div>
+
+</div>
+
+<footer>
+📱 WhatsApp: <a href="https://wa.me/51900398874" style="color:#00f7ff;">Enviar mensaje</a>
+</footer>
+
+<script>
+function comprar(producto){
+    let numero = "51900398874";
+    let mensaje = "Hola, quiero comprar " + producto;
+    window.open("https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje));
+}
+</script>
+
+</body>
+</html>
